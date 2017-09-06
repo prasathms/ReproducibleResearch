@@ -31,7 +31,7 @@ This section provides datails on importing dataset and preprocessing the data.
 Using "readr" package import downloaded activity dataset.
 ```{r, echo=TRUE}
 library(readr)
-activity <- read_csv("C:/DataScience/1-John Hopkins/Reproducible Research/activity.csv")
+activity <- read_csv("activity.csv")
 head(activity)
 ```
 
