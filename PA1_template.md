@@ -4,10 +4,6 @@ author: "Prasath"
 date: "September 6, 2017"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Introduction
 
 This project provides analysis of activity monitoring devices using [Activity monitoring data](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip) dataset.
@@ -28,10 +24,16 @@ Analysis includes following sections
 ###Loading and preprocessing the data
 This section provides datails on importing dataset and preprocessing the data.
 
+Unzip data to obtain a csv file.
+```r
+unzip("activity.zip",exdir = "data")
+```
+Reading the data into activity data frame and show some summary statistics
+
 Using "readr" package import downloaded activity dataset.
 ```{r, echo=TRUE}
 library(readr)
-activity <- read_csv("activity.csv")
+activity <- read_csv("data/activity.csv")
 head(activity)
 ```
 
