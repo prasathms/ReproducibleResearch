@@ -138,6 +138,9 @@ $(document).ready(function () {
 <div id="loading-and-preprocessing-the-data" class="section level3">
 <h3>Loading and preprocessing the data</h3>
 <p>This section provides datails on importing dataset and preprocessing the data.</p>
+<p>Unzip data to obtain a csv file.</p>
+<pre class="r"><code>unzip(&quot;activity.zip&quot;,exdir = &quot;data&quot;)</code></pre>
+<p>Reading the data into activity data frame and show some summary statistics</p>
 <p>Using “readr” package import downloaded activity dataset.</p>
 <pre class="r"><code>library(readr)
 activity &lt;- read_csv(&quot;activity.csv&quot;)</code></pre>
